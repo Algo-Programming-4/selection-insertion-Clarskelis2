@@ -19,9 +19,9 @@ def selection(Numbers):
   return Numbers
 
 def insertion(Numbers):
-  for i in range(len(Numbers)):
+  for i in range(1, len(Numbers)):
     j = i
-    while (j > 0 && Numbers[j] < Numbers[j - 1]):
+    while j > 0 and Numbers[j] < Numbers[j - 1]:
       temp = Numbers[j]
       Numbers[j] = Numbers[j - 1]
       Numbers[j - 1] = temp
