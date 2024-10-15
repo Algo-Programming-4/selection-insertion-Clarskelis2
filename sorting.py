@@ -1,11 +1,11 @@
-def bubble(Unsorted):
-  for n in range(len(Unsorted)):
-    for i in range(len(Unsorted) - 1):
-      if Unsorted[i] > Unsorted[i + 1]:
-        temp = Unsorted[i]
-        Unsorted[i] = Unsorted[i + 1]
-        Unsorted[i + 1] = temp
-  return Unsorted
+def bubble(list):
+  for n in range(len(list)):
+    for i in range(len(list) - 1):
+      if list[i] > list[i + 1]:
+        temp = list[i]
+        list[i] = list[i + 1]
+        list[i + 1] = temp
+  return list
 
 def selection(list):
   for i in range(len(list)-1):
