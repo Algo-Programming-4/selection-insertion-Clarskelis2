@@ -1,29 +1,29 @@
-def bubble(list):
-  for n in range(len(list)):
-    for i in range(len(list) - 1):
-      if list[i] > list[i + 1]:
-        temp = list[i]
-        list[i] = list[i + 1]
-        list[i + 1] = temp
-  return list
+def bubble(Numbers):
+  for n in range(len(Numbers)):
+    for i in range(len(Numbers) - 1):
+      if Numbers[i] > Numbers[i + 1]:
+        temp = Numbers[i]
+        Numbers[i] = Numbers[i + 1]
+        Numbers[i + 1] = temp
+  return Numbers
 
-def selection(list):
-  for i in range(len(list)-1):
+def selection(Numbers):
+  for i in range(len(Numbers)-1):
     index_smallest = i
-    for j in range(i+1, len(list)):
-      if list[j] < list[index_smallest]:
+    for j in range(i+1, len(Numbers)):
+      if Numbers[j] < Numbers[index_smallest]:
         index_smallest = j
-    temp = list[i]
-    list[i] = list[index_smallest]
-    list[index_smallest] = temp
-  return list
+    temp = Numbers[i]
+    Numbers[i] = Numbers[index_smallest]
+    Numbers[index_smallest] = temp
+  return Numbers
 
-def insertion(list):
-  for i in range(len(list)):
+def insertion(Numbers):
+  for i in range(len(Numbers)):
     j = i
-    while (j > 0 && list[j] < list[j - 1]):
-      temp = list[j]
-      list[j] = list[j - 1]
-      list[j - 1] = temp
+    while (j > 0 && Numbers[j] < Numbers[j - 1]):
+      temp = Numbers[j]
+      Numbers[j] = Numbers[j - 1]
+      Numbers[j - 1] = temp
       j -= 1
-  return list
+  return Numbers
